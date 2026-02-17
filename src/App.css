@@ -16,5 +16,12 @@
 @media (max-width: 768px) {
   .app-body {
     flex-direction: column;
+    min-height: calc(100vh - 60px - 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-body {
+    min-height: calc(100vh - 60px - 50px);
   }
 }

@@ -28,7 +28,7 @@ const SubHeader = () => {
         <div className="subheader-right">
           <span className="challenge-text">9-Day Fitness Challenge</span>
           <IconButton
-            icon={<InfoIcon size={20} />}
+            icon={<InfoIcon size={24} />}
             onClick={handleInfoClick}
             ariaLabel="Information"
             variant="ghost"

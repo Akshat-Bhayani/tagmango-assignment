@@ -105,11 +105,18 @@
 @media (max-width: 768px) {
   .others-posts-container {
     width: 100%;
+    max-width: 100%;
     border-radius: 16px;
+    margin-bottom: 1rem;
   }
 
   .others-posts-header {
     padding: 1rem;
+  }
+
+  .others-posts-title-section {
+    gap: 0.375rem;
+    margin-bottom: 0.5rem;
   }
 
   .others-posts-title,
@@ -117,7 +124,40 @@
     font-size: 0.875rem;
   }
 
+  .others-posts-heart {
+    font-size: 0.875rem;
+  }
+
   .others-posts-subheader {
     font-size: 0.75rem;
+  }
+
+  .profile-pic {
+    width: 28px;
+    height: 28px;
+  }
+
+  .profile-pic-middle,
+  .profile-pic-right {
+    margin-left: -10px;
+  }
+
+  .others-posts-content .subscriber-post-card,
+  .others-posts-content .feed-post-card {
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  .others-posts-content .subscriber-post-card:first-child,
+  .others-posts-content .feed-post-card:first-child {
+    margin-top: 1rem;
+  }
+
+  .others-posts-content .subscriber-post-card:last-child,
+  .others-posts-content .feed-post-card:last-child {
+    margin-bottom: 1rem;
   }
 }
