@@ -1,0 +1,123 @@
+.others-posts-container {
+  width: 640px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.others-posts-header {
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.others-posts-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.others-posts-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.others-posts-heart {
+  font-size: 1rem;
+}
+
+.others-posts-profiles {
+  display: flex;
+  align-items: center;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  object-fit: cover;
+  position: relative;
+}
+
+.profile-pic-left {
+  z-index: 1;
+  margin-left: 0;
+}
+
+.profile-pic-middle {
+  z-index: 2;
+  margin-left: -12px;
+}
+
+.profile-pic-right {
+  z-index: 3;
+  margin-left: -12px;
+}
+
+.others-posts-title-end {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.others-posts-subheader {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.others-posts-content {
+  padding: 0;
+}
+
+.others-posts-content .subscriber-post-card,
+.others-posts-content .feed-post-card {
+  width: calc(100% - 3rem);
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.others-posts-content .subscriber-post-card:first-child,
+.others-posts-content .feed-post-card:first-child {
+  margin-top: 1.5rem;
+}
+
+.others-posts-content .subscriber-post-card:last-child,
+.others-posts-content .feed-post-card:last-child {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .others-posts-container {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .others-posts-header {
+    padding: 1rem;
+  }
+
+  .others-posts-title,
+  .others-posts-title-end {
+    font-size: 0.875rem;
+  }
+
+  .others-posts-subheader {
+    font-size: 0.75rem;
+  }
+}

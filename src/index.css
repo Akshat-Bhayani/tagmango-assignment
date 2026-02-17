@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-primary-transparent: rgba(255, 255, 255, 0.9);
+  --bg-secondary: #f8f9fa;
+  --bg-hover: #f0f0f0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --border-hover: #d1d5db;
+  --accent-color: #6366f1;
+  --Tokens-Colors-text: #211F26;
+  --Colors-Neutral-Neutral-Alpha-3: rgba(48, 0, 64, 0.063);
+  --success-color: #10b981;
+  --Colors-Semantic-Success-3: #E6F6EB;
+  --Colors-Semantic-Success-11: #218358;
+  --day-label-color: rgba(4, 0, 17, 0.611765);
+  --sidebar-gradient-end: #F7F6FC;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-primary-transparent: rgba(15, 23, 42, 0.9);
+  --bg-secondary: #1e293b;
+  --bg-hover: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --border-hover: #475569;
+  --accent-color: #818cf8;
+  --Tokens-Colors-text: #f1f5f9;
+  --Colors-Neutral-Neutral-Alpha-3: rgba(255, 255, 255, 0.05);
+  --success-color: #34d399;
+  --Colors-Semantic-Success-3: rgba(6, 95, 70, 0.1);
+  --Colors-Semantic-Success-11: #34d399;
+  --day-label-color: rgba(241, 245, 249, 0.7);
+  --sidebar-gradient-end: #1e293b;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

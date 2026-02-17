@@ -1,0 +1,137 @@
+.day-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
+  overflow: visible;
+}
+
+.day-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 100%;
+  max-width: 242px;
+  height: 40px;
+  border-radius: 12px;
+  flex: none;
+  flex-grow: 0;
+  z-index: 3;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  opacity: 1;
+}
+
+.day-label-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.day-button:hover:not(:disabled):not(.day-button--active) {
+  background: var(--bg-hover);
+  border-color: transparent;
+}
+
+.day-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.day-button--active {
+  width: 250px;
+  height: 48px;
+  border-radius: 16px 0% 0px 16px;
+  gap: 24px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  opacity: 1;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: none;
+  font-weight: 600;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 10;
+}
+
+.day-button--active .day-icon--check {
+  color: var(--success-color);
+}
+
+.day-button--locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.day-button--locked .day-icon--lock {
+  color: var(--text-secondary);
+}
+
+.day-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  height: 24px;
+  background: transparent;
+  flex: 1;
+  min-width: 0;
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--day-label-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  flex-grow: 0;
+}
+
+.day-icon--check {
+  color: var(--success-color);
+}
+
+.day-icon--lock {
+  color: var(--day-label-color);
+}
+
+.day-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .day-selector {
+    gap: 0.5rem;
+  }
+
+  .day-button {
+    padding: 10px 12px;
+    font-size: 0.8125rem;
+  }
+}

@@ -1,0 +1,79 @@
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-actions-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-emoji-container-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-hover);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+}
+
+.post-emoji-container-btn:hover {
+  transform: scale(1.08);
+}
+
+.post-emoji {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.post-emoji-count {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-left: 0.125rem;
+}
+
+.post-emoji-picker-btn,
+.post-comment-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--bg-hover);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+  color: var(--text-primary);
+}
+
+.post-emoji-picker-btn:hover,
+.post-comment-icon-btn:hover {
+  transform: scale(1.1);
+  background: var(--bg-hover-active);
+}
+
+.post-comments-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.post-comments-btn:hover {
+  color: var(--text-primary);
+}
